@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Search</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"
+            rel="stylesheet" />
+      <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+      <div class="container search_page">
+            <nav class="navigation">
+                  <div class="menu_container">
+                        <ul>
+                              <li>
+                                    <a class="" href="index.html">
+                                          Home
+                                    </a>
+                              </li>
+                              <li>
+                                    <a class="" href="recipes.html">
+                                          Recipes
+                                    </a>
+                              </li>
+                              <li>
+                                    <a aria-current="page" class="active" href="search.html">
+                                          Search
+                                    </a>
+                              </li>
+                              <li>
+                                    <a class="" href="about-us.html">
+                                          About
+                                    </a>
+                              </li>
+                        </ul>
+                  </div>
+                  <div class="hamburger-menu">
+                        <span>
+                              <svg height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h16v16H0z" fill="none">
+                                    </path>
+                                    <path d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" fill="none"
+                                          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                          stroke-width="1.5">
+                                    </path>
+                              </svg>
+                        </span>
+                  </div>
+            </nav>
+            <div class="mobile-menu">
+                  <ul>
+                        <li>
+                              <a class="menu-item" href="index.html">
+                                    Home
+                              </a>
+                        </li>
+                        <li>
+                              <a class="menu-item" href="recipes.html">
+                                    Recipes
+                              </a>
+                        </li>
+                        <li>
+                              <a aria-current="page" class="menu-item active" href="search.html">
+                                    Search
+                              </a>
+                        </li>
+                        <li>
+                              <a class="menu-item" href="about-us.html">
+                                    About
+                              </a>
+                        </li>
+                  </ul>
+            </div>
+            <main class="search_main">
+                  <!--search and category filter-->
+                  <section class="search_controls">
+                        <div class="search_query">
+                              <h1>Full search</h1>
+                              <div class="search-box">
+                                    <span class="search-icon"><svg height="1em" viewbox="0 0 16 16" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h16v16H0z" fill="none"></path>
+                                                <path d="M6.5 1a5.5 5.5 0 0 1 4.437 8.749l3.556 2.846a1.351 1.351 0 1 1-1.898 1.898l-2.846-3.556A5.5 5.5 0 1 1 6.5 1m0 2a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"
+                                                      fill="currentColor"></path>
+                                          </svg></span>
+                                    <input aria-label="Search (display only)" class="search-input" placeholder="Search"
+                                          readonly="" type="text" />
+                              </div>
+                              <p>Let's go already!</p>
+                        </div>
+                        <div class="search_filter">
+                              <h2>Search filter : category</h2>   
+<div class="search_filter_options">
+    <div>
+        <label><input type="checkbox" name="category" value="seafood"> Seafood</label>
+        <label><input type="checkbox" name="category" value="meats"> Beef/Pork</label>
+        <label><input type="checkbox" name="category" value="chicken"> Chicken</label>
+        <label><input type="checkbox" name="category" value="misc"> Snacks</label>
+    </div>
+
+    <div>
+        <label><input type="checkbox" name="category" value="pasta"> Pasta</label>
+        <label><input type="checkbox" name="category" value="veg"> Vegetarian</label>
+        <label><input type="checkbox" name="category" value="dessert"> Dessert</label>
+    </div>
+</div>
+                        </div>
+                  </section>
+                  <!--search results-->
+                  <section class="search_results">
+                        <article class="search_result">
+                              <p class="search_result_category">Category: <span data-category="seafood">SEAFOOD</span>
+                              </p>
+                              <h2>Search result One</h2>
+                              <p>This will be the excerpt from WordPress, and you can control several things here. Like
+                                    the length of the text that is shown and multiple other things. Now i just writing
+                                    stuff to fill it out, and the final three dots indicate there is more text ...</p>
+                        </article>
+                        <article class="search_result">
+                              <p class="search_result_category">Category: <span data-category="chicken">CHICKEN</span>
+                              </p>
+                              <h2>Search result TWO</h2>
+                              <p>This will be the excerpt from WordPress, and you can control several things here. Like
+                                    the length of the text that is shown and multiple other things. Now i just writing
+                                    stuff to fill it out, and the final three dots indicate there is more text ...</p>
+                        </article>
+                  </section>
+            </main>
+            
+<!--footer-->
+<footer class="footer">
+    <div class="footer_social">
+        <h4>Socials</h4>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </div>
+
+    <div class="footer_navigation">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="search.html">Search</a>
+        <a href="about-us.html">About</a>
+    </div>
+
+    <div class="footer_information">
+        <p>This site is powered by 100% renewable electricity.</p>
+    </div>
+</footer>
+
+      </div>
+      <script src="js/app.js"></script>
+</body>
+
+</html>
